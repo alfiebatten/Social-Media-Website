@@ -1,0 +1,182 @@
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0px;
+
+  background-color: #f4f4f4;
+  user-select: none;
+
+  display: grid;
+  grid-template-columns: 225px 1fr 750px 1fr;
+  grid-template-rows: 75px 575px 1fr 100px;
+  grid-template-areas: ". . . ." "nav . content ." ". . content ." ". . button .";
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3C5A99;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6281c1;
+}
+
+::selection {
+  background: #e5e5e5;
+  color: #3C5A99;
+}
+
+.nav-bar {
+  grid-area: nav;
+
+  background-color: transparent;
+  border-right: 5px solid transparent;
+  align-items: center;
+  border-right: 1px solid #8e8e8e;
+  position: fixed;
+  height: 575px;
+  transform: translateY(75px);
+
+
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+  grid-template-areas: ". . ." ". home ." ". facebook ." ". twitter ." ". instagram ." ". youtube ." ". snapchat ." ". linkedin ." ". assessment ." ". casestudies ." ". . .";
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  color: #444444;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.text:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+.home {
+  grid-area: home;
+}
+
+.facebook {
+  grid-area: facebook;
+}
+
+.twitter {
+  grid-area: twitter;
+}
+
+.instagram {
+  grid-area: instagram;
+}
+
+.youtube {
+  grid-area: youtube;
+}
+
+.snapchat {
+  grid-area: snapchat;
+}
+
+.linkedin {
+  grid-area: linkedin;
+}
+
+.assessment {
+  grid-area: assessment;
+}
+
+.casestudies {
+  grid-area: casestudies;
+}
+
+.content {
+  grid-area: content;
+
+  text-align: justify;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 32px;
+  color: #444444;
+  user-select: text;
+}
+
+.title {
+  font-size: 40px;
+  margin-left: -20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #8e8e8e;
+  user-select: none
+}
+
+.content span {
+  font-size: 25px;
+  font-weight: 800;
+  color: #3C5A99;
+  margin-left: -20px;
+  user-select: none;
+}
+
+.content li {
+  margin-left: -40px;
+}
+
+.button-container {
+  grid-area: button;
+
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 1fr;
+  grid-template-areas: "home-button . twitter-button"
+}
+
+.button {
+  font-size: 14px;
+  color: #212121;
+  font-weight: 800;
+}
+
+.button:hover {
+  color: #3C5A99;
+}
+
+.home-button {
+  grid-area: home-button;
+}
+
+.twitter-button {
+  grid-area: twitter-button;
+}
+
+
+@media only screen and (max-width: 1050px) {
+  body {
+    grid-template-columns: 50px 1fr 50px;
+    grid-auto-rows: 7000px 10px;
+    grid-template-areas: ". content ."
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .button-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width 500px) {
+
+}

@@ -1,0 +1,128 @@
+body {
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+
+  background-color: #f4f4f4;
+  user-select: none;
+
+  display: grid;
+  grid-template-columns: 225px 1fr;
+  grid-template-rows: 75px 1fr 75px;
+  grid-template-areas: ". content" "nav content" ". content";
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3C5A99;
+  border-radius: 10px;
+}
+
+::selection {
+  background: #e5e5e5;
+  color: #3C5A99;
+}
+
+.nav-bar {
+  grid-area: nav;
+
+  background-color: transparent;
+  border-right: 5px solid transparent;
+  align-items: center;
+  border-right: 1px solid #8e8e8e;
+  position: fixed;
+  height: 575px;
+  transform: translateY(75px);
+
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+  grid-template-areas: ". . ." ". home ." ". facebook ." ". twitter ." ". instagram ." ". youtube ." ". snapchat ." ". linkedin ." ". assessment ." ". casestudies ." ". . .";
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  color: #444444;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.text:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+.home {
+  grid-area: home;
+}
+
+.facebook {
+  grid-area: facebook;
+}
+
+.twitter {
+  grid-area: twitter;
+}
+
+.instagram {
+  grid-area: instagram;
+}
+
+.youtube {
+  grid-area: youtube;
+}
+
+.snapchat {
+  grid-area: snapchat;
+}
+
+.linkedin {
+  grid-area: linkedin;
+}
+
+.assessment {
+  grid-area: assessment;
+}
+
+.casestudies {
+  grid-area: casestudies;
+}
+
+.content {
+  grid-area: content;
+
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 32px;
+  color: #444444;
+  user-select: text;
+
+  display: grid;
+  grid-template-columns: 1fr 800px 1fr;
+  grid-template-rows: 1fr 450px 1fr;
+  grid-template-areas: ". . ." ". video ." ". noload .";
+}
+
+video {
+  grid-area: video;
+
+  width: 800px;
+  height: auto;
+}
+
+.noload {
+  grid-area: noload;
+
+  font-family: 'Open Sans', sans-serif;
+  color: #212121;
+  font-weight: 800;
+}
