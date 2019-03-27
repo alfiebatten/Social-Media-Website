@@ -44,7 +44,7 @@ body {
 
   display: grid;
   grid-template-columns: 50px 1fr 50px;
-  grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 50px;;
   grid-template-areas: ". . ." ". home ." ". facebook ." ". twitter ." ". instagram ." ". youtube ." ". snapchat ." ". linkedin ." ". assessment ." ". casestudies ." ". . .";
 }
 
