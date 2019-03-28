@@ -163,7 +163,7 @@ body {
 
 @media only screen and (max-width: 1050px) {
   body {
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 100px 1fr 100px;
     grid-auto-rows: 7000px 10px;
     grid-template-areas: ". content ."
   }
