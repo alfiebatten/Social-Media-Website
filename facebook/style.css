@@ -139,7 +139,7 @@ body {
   display: grid;
   grid-template-columns: 50px 1fr 50px;
   grid-template-rows: 1fr;
-  grid-template-areas: "home-button . twitter-button"
+  grid-template-areas: "previous-button . next-button"
 }
 
 .button {
@@ -152,12 +152,13 @@ body {
   color: #3C5A99;
 }
 
-.home-button {
-  grid-area: home-button;
+.previous-button {
+  grid-area: previous-button;
 }
 
-.twitter-button {
-  grid-area: twitter-button;
+.next-button {
+  grid-area: next-button;
+  transform: translateX(15px);
 }
 
 
